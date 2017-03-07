@@ -4,7 +4,8 @@
 \usepackage{booktabs}
 \usepackage{url}
 \usepackage{amsthm,amssymb}
- \usepackage{amsmath}
+\usepackage{amsmath}
+
 \begin{document}
 \onehalfspacing
 
@@ -39,6 +40,23 @@ To make the report easier to read and understand, the chapters to follow are in 
 % interview/references? what people in such environment say? 
 
 % what are the similar challenges in a different environment? 
+\subsubsection{Social Data Analysis}
+\paragraph{Introduction}
+\input{social-data-analysis/introduction}
+\paragraph{Related Work}
+\input{social-data-analysis/related-work}
+
+\paragraph{Social Data Analysis: Areas of Interest}
+\subparagraph{Efficiency}\label{sec:sda-efficiency}
+\input{social-data-analysis/efficiency}
+\subparagraph{Collaboration}\label{sec:sda-collaboration}
+\input{social-data-analysis/collaboration}
+\subparagraph{Comfort}\label{sec:sda-comfort}
+\input{social-data-analysis/comfort}
+\subparagraph{Safety}\label{sec:sda-safety}
+\input{social-data-analysis/safety}
+\subparagraph{Conclusion}
+\input{social-data-analysis/conclusion}
 
 \subsection{Research methods}
 
@@ -65,6 +83,7 @@ To make the report easier to read and understand, the chapters to follow are in 
 \nocite{*}
 \bibliographystyle{tktl}
 \bibliography{references}
+\bibliography{social-data-analysis}
 
 \lastpage
 \appendices
