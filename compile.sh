@@ -11,6 +11,8 @@ if [ "$#" -ne 1 ]; then
   printUsageAndExit
 fi
 
+rm -f $FILE.aux $FILE.bbl $FILE.blg $FILE.log $FILE.out $FILE.pdf $FILE.toc
+
 pdflatex $FILE.tex
 RESULT=$?
 if [ $RESULT -ne 0 ]; then
