@@ -24,11 +24,25 @@ To make the communication and knowledge sharing among team members, a Facebook g
 For the wireframes and prototype design, Microsoft Visio was used. To design the APIs, a Swagger \footnote{\url{http://swagger.io}} page was modified. Xamarin IDE \footnote{\url{https://www.xamarin.com/}} (Integrated Developer Environment) was used for the client's development.
 
 \subsection{Chosen technologies}
+The application is separated into a client and a server application.
 % what resources are utilized for carrying the project out? 
 
 % what technologies, development principles are chosen and followed and why? 
 
 %what do we build upon?
+
+\paragraph{Client} It was decided to develop the client in GTK\#. We chose this framework because it is platform-independent -- our client will be able to run on Linux, MacOS, and Windows -- and we were familiar with C\#. We decided to create a minimum viable product (MVP) and extend this application in small steps. 
+
+A screenshot of the MVP is displayed in Figure \ref{fig:mvp-screenshot}. It has only 2 functionalities: to notify the user the user 25 minutes after work has been started and to notify the user 5 minutes after a break has been started. Both ``starting work'' and ``starting break'' have to be manually triggered by the users via clicking the corresponding buttons.\todo{add next feature extensions}\todo{what resources are utilized for carrying the project out?}\todo{what technologies, development principles are chosen and followed and why? }
+
+\begin{figure}
+  \centering
+  \includegraphics{images/mvp-screenshot.png}
+  \caption{Client MVP}
+  \label{fig:mvp-screenshot}
+\end{figure}
+
+
 
 \subsection{APIs}
 % what technologies were chosen and why?
