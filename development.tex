@@ -49,6 +49,7 @@ We decided to follow a LEAN\footnote{\url{https://en.wikipedia.org/wiki/Lean_pro
 
 A screenshot of the MVP is displayed in Figure \ref{fig:mvp-screenshot}. It has only 2 functionalities: to notify the user the user 25 minutes after work has been started and to notify the user 5 minutes after a break has been started. Both ``starting work'' and ``starting break'' have to be manually triggered by the users via clicking the corresponding buttons. This MVP will then extended step-by-step with the remaining features.
 
+To enable testing the app while extending it with new experimental features, we decided to use so-called Feature Toggles\footnote{\url{https://martinfowler.com/articles/feature-toggles.html}}. Feature Toggles are boolean expressions that can be set to true resp. false on compile time to either include or disable a new feature.
 
 \begin{figure}
   \centering
