@@ -70,7 +70,8 @@ The application is separated into a client and a server application.
 
 \paragraph{Client} It was decided to develop the client in GTK\#. We chose this framework because all of our 
 team-members had previous experience with C\#. We also were aware, that GTK\# with Mono is platform-independent -- our 
-client will be able to run on Linux, MacOS, and Windows.
+client should be able to run on Linux, MacOS, and Windows. However, we were unable to build the client in a way that 
+it actually runs on all platforms supported by GTK\#; the current releases only run on Linux.
 
 We decided to follow a LEAN\footnote{\url{https://en.wikipedia.org/wiki/Lean_product_development}} approach to create 
 a minimum viable product (MVP) and extend this application in small steps to get a running application as soon as 
